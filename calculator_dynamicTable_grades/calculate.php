@@ -29,11 +29,11 @@
     <form  style="width: 500px;" class="mx-auto mt-5"  method="POST">
         <div class="form-group">
           <label for="exampleInputEmail1">Enter first number</label>
-          <input id="number1" class="form-control" name="number1" type="number"  placeholder="ex: 4" required/>
+          <input id="number1" class="form-control" name="number1" type="number"  required/>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Enter secoend number</label>
-          <input id="number2" class="form-control" name="number2" type="number" placeholder="ex: 2" required/>
+          <input id="number2" class="form-control" name="number2" type="number" required/>
         </div>
         <button type="submit" name="add" class="btn btn-primary">+</button>
         <button type="submit" name="sub" class="btn btn-primary">-</button>

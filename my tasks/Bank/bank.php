@@ -17,7 +17,6 @@
 <div class="container">
     <form  class="mx-auto mt-5" method="POST">
         <h1 class="text-center mb-5">Bank</h1>
-        <!------------------------------ first part ------------------------->
         <div class="form-group">
             <label for="name">Your Name</label>
             <input id="name" class="form-control" name="username"  type="text"  value="<?=$_POST["username"]?? "" ?>" required/>    
@@ -52,7 +51,7 @@
                         <th> Total  installment </th>  
                         <th> <?=$total?> </th>        
                     </tr>
-                    <tr class="h5 text-success">
+                    <tr>
                         <th> Monthly installment </th>  
                         <th> <?=$permonth?> </th>        
                     </tr>

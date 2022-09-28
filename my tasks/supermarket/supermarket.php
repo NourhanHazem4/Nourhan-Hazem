@@ -41,7 +41,8 @@ $delivery=[
         </div>
         <div class="form-group">
             <label for="products">Number of products</label>
-            <input id="products" class="form-control"  name="num" value="<?=$_POST["num"]?? "" ?>" type="number" required />
+            <input id="products" class="form-control"  name="num"
+             value="<?=$_POST["num"]?? "" ?>" type="number" required />
         </div>
         <button type="submit" name="add" class="btn btn-primary">Enter products</button>
 

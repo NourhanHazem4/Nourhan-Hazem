@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && $_POST && isset($_POST["name"]) && isse
     $_SESSION["name"] = $_POST["name"];
     $_SESSION["num_of_members"] = $_POST["num_of_members"];
 }else{
-    header('Location: join_us.php');die;    
+    header('Location: index.php');die;    
 }
 ?>
 <!doctype html>

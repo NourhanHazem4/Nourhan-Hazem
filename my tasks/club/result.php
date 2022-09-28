@@ -67,7 +67,7 @@ if(!($_SERVER["REQUEST_METHOD"]=="POST" && $_POST)){
         <h1>Sports</h1>
         <table class="table table-striped">
             <tbody>
-            <?php foreach ($cost_of_each_game as $sport => $price) {?>
+            <?php foreach ($games as $sport => $price) {?>
                 <tr>
                     <th scope="row"><?=$sport?></th>
                     <td> <?= $price ?>  </td>
@@ -75,7 +75,7 @@ if(!($_SERVER["REQUEST_METHOD"]=="POST" && $_POST)){
             <?php } ?>
 
             <tr>
-                <th scope="row">Club subscribtion</th>
+                <th scope="row">Club subscribtion for all members</th>
                 <td><?=$_SESSION["num_of_members"] *2500 + 10000?> </td>
             </tr>
 

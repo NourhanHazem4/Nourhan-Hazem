@@ -58,7 +58,7 @@ $users = [
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Dynamic Table</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -68,7 +68,7 @@ $users = [
   </head>
   <body>
     <div class="container-fluid" >
-        <h1 class="text-secondary text-center mb-4"> Formate Table </h1>
+        <h1 class="text-secondary text-center mb-4"> Dynamic Table </h1>
         <table class="table">
             <thead>
                 <tr>
@@ -83,10 +83,10 @@ $users = [
                      <?php foreach ($users[$i] as  $userprop) {
                        if(gettype($userprop)=="array" || gettype($userprop)=="object"){
                             echo "<td>";
-                            foreach ($userprop as $key => $properval) {
+                            foreach ($userprop as $key => $Pvalue) {
                                echo $key=="gender"?
-                                    ($properval=="m"? "male":"female"):
-                                    ("- {$properval} <br>");
+                                    ($Pvalue=="m"? "male":"female"):
+                                    ("- {$Pvalue} <br>");
                             }
                             echo "</td>";
                        }else{
